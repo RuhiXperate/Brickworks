@@ -1,0 +1,23 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium_intro {
+
+	public static void main(String[] args) {
+		
+// Invoke the Browser
+//WebDriver methods + class methods = driver object
+	//ChromeDriver driver = new ChromeDriver(); // created object (driver) of ChromeDriver class
+
+//WebDriver methods only for driver object, 
+//cause different browser should also be able to access all the methods therefore we use WeDriver instead of ChromeDriver.
+// selenium invokes chromedriver.exe to launch chrome browser
+		System.setProperty("webdriver.chrome.driver", "/Users/RuhiHussain/OneDrive - Xperate Limited/Documents/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+		System.out.println(driver.getTitle());
+	
+	}
+
+}
+

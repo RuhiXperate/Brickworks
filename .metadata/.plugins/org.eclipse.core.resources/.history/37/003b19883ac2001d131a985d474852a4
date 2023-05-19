@@ -1,0 +1,13 @@
+
+public class String {
+
+	public static void main(java.lang.String[] args) {
+		// TODO Auto-generated method stub
+		
+		java.lang.String s = "MY NAME IS RUHI";
+		java.lang.String[] split = s.split(" ");
+		System.out.println(split[]);
+
+	}
+
+}
